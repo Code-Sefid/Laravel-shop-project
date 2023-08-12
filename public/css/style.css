@@ -1,0 +1,254 @@
+
+
+* {
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+body {
+    padding: 5px 60px 5px 60px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 10px 0 10px 0;
+}
+
+input[type='submit'], input[type='button'], button {
+    border-radius: 5px;
+    padding: 5px;
+    border: unset;
+    background: #9f78ff;
+    color: white;
+    transition: background .5s ease-out;
+}
+
+input[type='submit']:hover, input[type='button']:hover, button:hover {
+    background: #684fa8;
+}
+
+input[type='text'], input[type='password'], input[type='email'] {
+    border-radius: 5px;
+    padding: 5px;
+    border: #9f78ff solid 1px;
+}
+
+
+/* Navigation */
+.navi ul {
+    display: flex;
+    box-shadow:rgba(94, 90, 112, 0.15) 0px 10px 20px 0px;
+
+}
+
+.navi ul li {
+    padding: 10px 0 10px 0;
+    width: 90px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.navi ul li:after {
+    content: '';
+    display: block;
+    transition: width .2s ease-in;
+    margin-top: 10px;
+    height: 2px;
+    width: 0;
+    background: #1d2547;
+}
+
+.navi ul li:hover::after {
+    width: 100%;
+}
+
+/* slider */
+.slider {
+    margin-bottom: 20px;
+}
+
+/* content */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.content h2:before,.content h2:after
+{
+    content: '';
+    height: 2px;
+    background: #ccc;
+    display: block;
+    width: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 40px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.products_col {
+    width: 340px;
+    position: relative;
+    height: 340px;
+}
+
+.products_col img {
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product_dim {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s ease-out;
+}
+
+.product_dim a {
+    padding: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 40%;
+    text-align: center;
+}
+
+.products_col:hover > .product_dim {
+    opacity: 1;
+}
+
+.blog_col {
+    width: 300px;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.blog_col img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.blog_text {
+    bottom: 0;
+    height: 40px;
+    position: absolute;
+    justify-content: center;
+    line-height: 1.4;
+    align-items: center;
+    background: rgba(219, 227, 255, 0.7);
+    padding: 7px;
+    transition: height 0.5s ease-out;
+    box-shadow:rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+.blog_col:hover > .blog_text {
+    height: 70%;
+}
+
+.readMore {
+    padding: 7px 10px;
+    border: 2px solid #1d2547;
+    color: #1d2547;
+    width: 40%;
+    text-align: center;
+}
+.readMore:hover{
+    background-color: #1d2547;
+    color: aliceblue;
+}
+
+.up-style {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+   background-color: #1d2547;
+    color: #ffffff;
+    text-decoration: none;
+    scroll-behavior:smooth;
+    border: 1px solid white;
+  }
+
+  .up-style:hover {
+    background-color:#ffffff;
+    color: #1d2547;
+    border: 1px solid #1d2547;
+  }
+
+/* footer */
+.footer {
+    background: #1d2547;
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    color: #C2C5DB;
+}
+
+.footer_col {
+    width: 20%;
+}
+
+.footer_heading {
+    margin-bottom: 20px;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    line-height: 1.3;
+}
+.category li:hover{
+    color: #9f78ff;
+}
+
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.loginForm input{
+    width: 100%;
+}

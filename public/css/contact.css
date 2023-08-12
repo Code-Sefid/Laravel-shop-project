@@ -1,0 +1,152 @@
+
+html {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+   
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+/* Navigation */
+.navi ul {
+  display: flex;
+  box-shadow:rgba(94, 90, 112, 0.15) 0px 10px 20px 0px;
+
+}
+
+.navi ul li {
+  padding: 10px 0 10px 0;
+  width: 90px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.navi ul li:after {
+  content: '';
+  display: block;
+  transition: width .2s ease-in;
+  margin-top: 10px;
+  height: 2px;
+  width: 0;
+  background: #1d2547;
+}
+
+.navi ul li:hover::after {
+  width: 100%;
+}
+
+.right-section {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.reset-buttom {
+    position: fixed;
+    top: 80px;
+    right: 40px;
+    width: 45px;
+    height: 45px;
+    padding:5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 50%;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: rgb(31, 14, 75);
+}
+
+.logo-part {
+    position:relative;
+    top: 100px;
+    right: 525PX;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+
+.main-section {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-con { 
+    width: 70%;
+    font-size: 27px;
+    align-self: center;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.form-section {
+    width: 100%;
+    margin-top: 100px;
+}
+
+ .form-section form {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-bottom: 30px;
+  }
+
+  .form-section form input:not(.submit,.reset-buttom) {
+    width: 90%;
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(234, 234, 234);
+    transition: border-bottom 2s ease-out;
+  }
+
+  .form-section form input:hover {
+    border-bottom: 1px solid #301064;
+  }
+
+  .form-section form label {
+    padding-top: 10px;
+  }
+
+  .submit {
+    width: 24%;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 20px;
+    align-self: flex-end;
+    padding: 10px 18px;
+    background-color:#ffffff;
+    color: rgb(32, 14, 81);
+    border: 1px solid rgb(11, 5, 54);
+  
+  }
+
+  .submit:hover {
+    color: white;
+    background-color: rgb(57, 32, 126);
+   
+   
+  }
+  
