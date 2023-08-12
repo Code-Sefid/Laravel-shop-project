@@ -9,5 +9,3 @@ run `composer install`
 
 # Step 4
 run `php artisan serve`
-
-![Uploading Screenshot 2023-08-12 124840.png…]()
